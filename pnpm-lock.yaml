@@ -11,9 +11,15 @@ importers:
       axios:
         specifier: ^1.7.5
         version: 1.7.5
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
       googleapis:
         specifier: ^142.0.0
         version: 142.0.0
+      install:
+        specifier: ^0.13.0
+        version: 0.13.0
 
 packages:
 
@@ -60,6 +66,10 @@ packages:
   delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
+
+  dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
 
   ecdsa-sig-formatter@1.0.11:
     resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
@@ -140,6 +150,10 @@ packages:
   https-proxy-agent@7.0.5:
     resolution: {integrity: sha512-1e4Wqeblerz+tMKPIq2EMGiiWW1dIjZOksyHWSUm1rmuvw/how9hBHZ38lAGj5ID4Ik6EdkOw7NmWPy6LAwalw==}
     engines: {node: '>= 14'}
+
+  install@0.13.0:
+    resolution: {integrity: sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==}
+    engines: {node: '>= 0.10'}
 
   is-stream@2.0.1:
     resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==}
@@ -260,6 +274,8 @@ snapshots:
 
   delayed-stream@1.0.0: {}
 
+  dotenv@16.4.5: {}
+
   ecdsa-sig-formatter@1.0.11:
     dependencies:
       safe-buffer: 5.2.1
@@ -371,6 +387,8 @@ snapshots:
       debug: 4.3.6
     transitivePeerDependencies:
       - supports-color
+
+  install@0.13.0: {}
 
   is-stream@2.0.1: {}
 
