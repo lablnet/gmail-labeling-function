@@ -47,7 +47,7 @@ async function watchGmail() {
     const res = await gmail.users.watch({
       userId: 'me',
       requestBody: {
-        labelIds: ['INBOX'],
+        labelIds: ['INBOX', 'UNREAD'],
         topicName: TOPIC_NAME,
       },
     });
