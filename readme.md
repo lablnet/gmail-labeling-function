@@ -33,9 +33,10 @@
         gcloud functions deploy labelEmail \
         --runtime nodejs20 \
         --trigger-topic email-labeling \
-        --set-env-vars USER_EMAIL=YOUR-EMAIL_GOES-HERE
+        --set-env-vars USER_EMAIL=YOUR-EMAIL_GOES-HERE,PROJECT_ID=YOUR-PROJECT
     ```
     - Replace `YOUR-EMAIL_GOES-HERE` with the email address you want to label the email for.
+    - Replace `YOUR-PROJECT` with the project id.
 
 ### Deploy the function subsequent times
 ```sh
